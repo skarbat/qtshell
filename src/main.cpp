@@ -3,10 +3,18 @@
  *
  */
 
-#include <stdio.h>
+#include <QGuiApplication>
+#include <QQuickView>
 
-int main()
+int main(int argc, char *argv[])
 {
-    printf ("qtshell\n");
+    QGuiApplication app(argc, argv);
+
+    QQuickView view;
+    view.setSource(QUrl::fromLocalFile("main.qml"));
+    view.show();
+
+    app.exec();
+
     return 0;
 }
