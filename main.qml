@@ -5,9 +5,13 @@
  */
 
 import QtQuick 2.0
+import QtShell 1.0
 
 Rectangle
 {
     anchors.fill: parent
-    color: "red"
+    color: "white"
+
+    QtShell {
+    }
 }
