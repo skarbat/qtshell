@@ -4,14 +4,24 @@
  *   Simple view that embeds the qtshell UI
  */
 
-import QtQuick 2.0
+import QtQuick 2.3
+import QtQuick.Controls 1.4
+
 import QtShell 1.0
 
-Rectangle
-{
-    anchors.fill: parent
-    color: "white"
+ApplicationWindow {
+    id: main_window
+    flags: Qt.FramelessWindowHint
+    visible: true
+    color: "transparent"
+    visibility: "FullScreen"
 
-    QtShell {
+    Rectangle
+    {
+        anchors.fill: parent
+        color: "white"
+        QtShell {
+
+        }
     }
 }

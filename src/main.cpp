@@ -6,7 +6,9 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQuickView>
-#include <QQmlEngine>
+
+#include <QtDeclarative/QDeclarativeView>
+
 #include <QDir>
 
 int main(int argc, char *argv[])
@@ -14,6 +16,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
+    //QDeclarativeView view;
     QQuickView view;
 
     // export QML_IMPORT_TRACE

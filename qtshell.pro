@@ -4,7 +4,7 @@ TEMPLATE = app
 TARGET = qtshell
 INCLUDEPATH += ./include
 
-QT += quick
+QT += quick declarative
 
 # Input
 HEADERS += include/qtshell.h
